@@ -24,7 +24,7 @@ export const Pure = () => {
     const loopingForCoffee = () => {
         let cups = [];
 
-        for (let i = 0; i < cups.length; i++) {
+        for (let i = 0; i <= 10; i++) {
             cups.push(<Coffee key={i} womenCoffee={i} />);
         }
 
