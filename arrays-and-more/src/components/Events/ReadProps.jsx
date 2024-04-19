@@ -30,6 +30,14 @@ function IniciarBoton ({nombrePeli}) {
     )
 }
 
+function SubidaImagen () {
+    return (
+        <BotonAlerta onClick={() => alert('Subiendo...')}>
+            Descarga de Imágen
+        </BotonAlerta>
+    )
+}
+
 export default function ReadProps() {
 
   return (
@@ -41,6 +49,16 @@ export default function ReadProps() {
         <BotonAlerta mensaje="Cargando...">
             Subir imágen
         </BotonAlerta>
+
+        <IniciarBoton nombrePeli="F&F10-P2" />
+
+        <section>
+            <input type="file" id="file0" required />
+            <img src="" alt="" />
+            <span>
+                <SubidaImagen />
+            </span>
+        </section>
     </div>
   )
 

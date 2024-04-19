@@ -14,6 +14,16 @@ const ArticulosDos = ({ price, isCharged }) => {
     </li>;
 }
 
+{/* Operador Exponente */}
+const Potencia = () => {
+
+    let j = 6;
+    let k = 8;
+
+    let operacion = j ** k;
+    console.log("El valor de la operación compleja y ultramatemática es: " + operacion);
+}
+
 export const Conditional = () => {
 
   return (
